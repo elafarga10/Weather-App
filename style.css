@@ -17,34 +17,69 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to right bottom, rgba(3, 210, 255, 0.9), rgba(5, 85, 255, 0.9));
+    background-image: linear-gradient(to bottom, rgb(47, 150, 163), rgb(33, 58, 197));
     color: white;
 }
 
-.location, 
-.temperature {
-    height: 30vh;
+.location, .temperature {
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.location {
+    height: 20vh;
+}
+
+.location__timezone {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
 .temperature {
     flex-direction: column;
+    height: 10vh;
+    margin-top: 3rem;
+}
+
+.temperature__description {
+    margin-bottom: 4rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.temperature__location {
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 .degree-section {
     display: flex;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .degree-section span {
     margin: 1rem;
     font-size: 3rem;
+    opacity: 0.6;
 }
 
 .degree-section h2 {
     font-size: 4rem;
     font-weight: 300;
+}
+
+
+img.resize {
+    height: 10rem;
+    width: 10rem;
+}
+
+@media (max-width: 700px) {
+    img.resize {
+        width: 64px;
+        height: 64px;
+    }
 }
