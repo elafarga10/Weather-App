@@ -1,7 +1,8 @@
 html {
     font-size: 62.5%;
-    line-height: 1;
     overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-family:
 }
 
 body {
@@ -24,9 +25,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.weather__icon {
-    height: 5rem;
-}
 
 .weather__icon--display {
 
@@ -34,8 +32,15 @@ body {
 
 .weather__temp {
     font-size: 2rem;
+    font-weight: 300;
+}
+
+.weather__temp--faren {
+    font-size: 1rem;
+    color: white;
 }
 
 .weather__location {
     font-size: 1.5rem;
+    letter-spacing: 1.3px;
 }

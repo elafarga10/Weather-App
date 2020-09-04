@@ -4,15 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather App</title>
-		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="weather">
 			<div class="weather__data">
 				<div class="weather__icon">
+                    <h2 class="weather__timezone"></h2>
 					<img class="weather__icon--display" src="weather 2/64x64/day/113.png"></img>
 				</div>
-				<h3 class="weather__temp">75 degrees</h3>
+                <h3 class="weather__temp">75 degrees <span class="weather__temp--faren">F</span></h3>
+                <h3 class="weather__description"></h3>
 				<h3 class="weather__location">Los Angeles</h3>
 			</div>
 		</div>
