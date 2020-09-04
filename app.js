@@ -1,9 +1,9 @@
 window.addEventListener("load", getWeather => {
-    let icon = document.querySelector('.weather__icon--display');
-    let temp = document.querySelector('.weather__temp');
-    let city = document.querySelector('.weather__location');
-    let timezone = document.querySelector('.weather__timezone');
-    let description = document.querySelector('.weather__description')
+    let icon = document.querySelector('.icon');
+    let temp = document.querySelector('.temperature__degree');
+    let city = document.querySelector('.temperature__location');
+    let timezone = document.querySelector('.location__timezone');
+    let description = document.querySelector('.temperature__description')
     let lat;
     let long;
     navigator.geolocation.getCurrentPosition(position => {
